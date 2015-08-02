@@ -1,0 +1,6 @@
+C:\Matrix\Samples@class\GettingStarted\bin\GettingStarted.dll.config
+C:\Matrix\Samples@class\GettingStarted\bin\GettingStarted.dll
+C:\Matrix\Samples@class\GettingStarted\bin\GettingStarted.pdb
+C:\Matrix\Samples@class\GettingStarted\obj\Debug\GettingStarted.csprojResolveAssemblyReference.cache
+C:\Matrix\Samples@class\GettingStarted\obj\Debug\GettingStarted.dll
+C:\Matrix\Samples@class\GettingStarted\obj\Debug\GettingStarted.pdb
