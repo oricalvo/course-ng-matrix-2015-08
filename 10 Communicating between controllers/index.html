@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title></title>
+</head>
+<body>
+    <div ng-controller="SiteMenuCtrl">
+        <ul>
+            <li ng-repeat="page in pages" ng-click="changePage(page)">
+                <span>{{page}}</span>
+            </li>
+        </ul>
+
+        <div ng-if="currentPage == 'Admin'">
+            <div ng-controller="ContentCtrl">
+                <h1>{{currentPage}}</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="SiteMenuCtrl.js"></script>
+    <script src="ContentCtrl.js"></script>
+</body>
+</html>

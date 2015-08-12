@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title></title>
+
+    <style>
+        [ng-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <!--<span ng-bind="message"></span>-->
+
+        <span ng-cloak>{{message}}</span>
+        
+        <div class="document">
+            <span ng-bind-html="doc"></span>
+        </div>
+
+        <div ng-show="role=='Admin'" ng-cloak>
+            <h1>Admin Section</h1>
+        </div>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="angular-sanitize.js"></script>
+    <script src="App.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>
