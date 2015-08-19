@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title></title>
+
+    <base href="/" />
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        {{message}}
+
+        <button ng-click="run()">Click me</button>
+
+        <a href="/#/about">Goto Local</a>
+        <a href="/about" target="_self">Goto External</a>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>
