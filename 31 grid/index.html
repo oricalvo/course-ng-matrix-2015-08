@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title></title>
+</head>
+<body>
+    <div ng-controller="HomeCtrl">
+        <grid model="contacts">
+            <column>
+                <!--<field>name</field>-->
+                <title>Name</title>
+                <template>
+                    <button>Delete</button>
+                    <span>{{contact.name}}</span>
+                </template>
+            </column>
+            <column>
+                <field>id</field>
+                <title>ID</title>
+            </column>
+        </grid>
+
+        <div>
+            <input ng-model="name" /><button ng-click="add()">Add</button>
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
+    <script src="App.js"></script>
+    <script src="GridDirective.js"></script>
+    <script src="HomeCtrl.js"></script>
+</body>
+</html>
